@@ -1,5 +1,5 @@
 {
-  "name": "xPath",
+  "name": "compute-xpath",
   "version": "1.0.0",
   "description": "A library to generate Xpath based on DOM elements",
   "main": "./dist/index.js",

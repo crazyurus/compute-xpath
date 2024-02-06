@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import { SelectorPart, type Selector } from './selector';
+import { SelectorPart, type Selector, type DeepSelector } from './selector';
 
 const attributeSelector = (name: string, value: string): string => {
   return `//*[@${name}=${JSON.stringify(value)}]`;
@@ -139,9 +139,9 @@ export const computeXPath = (
     return '/';
   }
 
-  const selectors = [];
+  const selectors: DeepSelector = [];
+  const buffer: SelectorPart[] = [];
 
-  const buffer = [];
   let contextNode: Node | null = node;
   while (contextNode !== document && contextNode) {
     const part = getSelectorPart(contextNode, optimized, attributes);
