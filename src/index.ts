@@ -1,0 +1,1 @@
+export { computeXPath } from './xPath';
