@@ -1,4 +1,4 @@
-# xPath
+# Compute xPath
 
 ![publish](https://github.com/crazyurus/xpath/actions/workflows/publish.yaml/badge.svg)
 [![BSD-3-Clause License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
@@ -16,6 +16,13 @@ You can generate xPath based on DOM elements. For example:
 import { computeXPath } from 'compute-xpath';
 
 const xPath = computeXPath(element)[0];
+```
+
+If you need to query the corresponding element or text based on xPath, you can call the browser API `document.evalute`. For example:
+
+```js
+const result = document.evaluate(xPath, document.documentElement);
+const element = result.iterateNext();
 ```
 
 ## Parameters
