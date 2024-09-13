@@ -1,28 +1,28 @@
 {
   "name": "compute-xpath",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library to generate Xpath based on DOM elements",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crazyurus/xpath.git"
+    "url": "git+https://github.com/crazyurus/compute-xpath.git"
   },
   "keywords": [
     "xpath"
   ],
   "author": "Crazy Urus <crazyurus@vip.qq.com>",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/crazyurus/xpath",
+  "homepage": "https://github.com/crazyurus/compute-xpath",
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "typescript": "^5.6.2"
   },
   "files": [
     "dist/*.*"
   ],
-  "packageManager": "pnpm@8.14.0"
+  "packageManager": "pnpm@9.10.0"
 }
